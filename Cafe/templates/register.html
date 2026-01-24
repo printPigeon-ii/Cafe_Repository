@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+
+            background-image: url("https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px 50px;
+            border-radius: 12px;
+            width: 500px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            font-size: 15px;
+        }
+
+        button{
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background: #8b1e1e;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+        }
+
+        button:hover{
+            background: #a62323;
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        }
+
+        .errorlist{
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>Регистрация</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+</div>
+
+</body>
+</html>
+

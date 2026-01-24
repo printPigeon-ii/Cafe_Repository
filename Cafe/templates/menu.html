@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Наше меню</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1{
+            text-align: center;
+            margin: 30px 0;
+            color: white;
+            text-shadow: 0 3px 8px rgba(0,0,0,0.7);
+        }
+
+        .box{
+            background: rgba(255,255,255,0.95);
+            width: 980px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .menu{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .card{
+            background: white;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            transition: 0.2s;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+        }
+
+        img{
+            width: 130px;
+            height: 90px;
+            object-fit: cover;
+            margin-right: 12px;
+            border-radius: 6px;
+        }
+
+        .price{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Наше меню</h1>
+
+<div class="box">
+    <div class="menu">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Пицца Маргарита</p><p class="price">180 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521389508051-d7ffb5dc8f8f?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Паста Карбонара</p><p class="price">210 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Лазанья Болоньезе</p><p class="price">240 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1604909053196-0d6b9c3b4c74?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Ризотто с грибами</p><p class="price">200 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Брускетта с томатами</p><p class="price">120 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1608897013039-8872b80a9c41?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Салат Капрезе</p><p class="price">160 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Тирамису</p><p class="price">150 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Панна-котта</p><p class="price">140 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600628422019-6963a585d5d4?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Фокачча</p><p class="price">110 грн</p></div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=600&q=80"
+                 onerror="this.src='https://via.placeholder.com/130x90?text=No+Image'">
+            <div><p>Равиоли с сыром</p><p class="price">220 грн</p></div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
