@@ -17,6 +17,19 @@
             align-items: center;
         }
 
+        .user-box{
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            background: rgba(255,255,255,0.90);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+            z-index: 9999;
+        }
+
         .box{
             background: white;
             padding: 60px 80px;
@@ -54,6 +67,14 @@
 
 <body>
 
+<div class="user-box">
+    {% if user.is_authenticated %}
+        {{ user.username }}
+    {% else %}
+        Гость
+    {% endif %}
+</div>
+
 <div class="box">
     <h1>Наш ресторан</h1>
 
@@ -65,4 +86,3 @@
 
 </body>
 </html>
-
